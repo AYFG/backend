@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Var",
+      "request": "launch",
+      "mainClass": "Var",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-DemoApplication<demo>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
