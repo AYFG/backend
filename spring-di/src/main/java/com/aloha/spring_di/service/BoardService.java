@@ -6,7 +6,7 @@ public interface BoardService {
     
     public void test();
 
-    public void setDAO(BoardDAO boardDAO)
+    public void setDAO(BoardDAO boardDAO);
 
 
 }
