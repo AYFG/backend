@@ -1,5 +1,23 @@
 package com.aloha.spring_di2.dto;
 
-public class Board {
+// alt + shift + O 한번에 import
+import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Board extends Post {
+
+    private Long no;
+    private String id;
+    private String title;
+    private String content;
+    private String writer;
+    private Date createdAt;
+    private Date updatedAt;
 
 }
