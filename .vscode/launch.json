@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GetterSetter2",
+      "request": "launch",
+      "mainClass": "GetterSetter2"
+    },
+    {
+      "type": "java",
       "name": "Var",
       "request": "launch",
       "mainClass": "Var",
