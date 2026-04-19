@@ -1,0 +1,15 @@
+# Java build and runtime
+*.class
+build/
+
+# Local library jars (managed by Gradle instead)
+lib/*.jar
+
+# IDE & OS files
+.idea/
+*.iml
+*.log
+*.DS_Store
+
+# Generated metadata
+out/
