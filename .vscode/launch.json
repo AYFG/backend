@@ -2,6 +2,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Section05_Constructor",
+      "request": "launch",
+      "mainClass": "Section05_Constructor",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Section04_ObjectOriented",
+      "request": "launch",
+      "mainClass": "Section04_ObjectOriented",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Section03_BasicReference",
+      "request": "launch",
+      "mainClass": "java_lecture_2.Section03_BasicReference",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Section02_ClassData",
+      "request": "launch",
+      "mainClass": "java_lecture_2.Section02_ClassData",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "GetterSetter2",
       "request": "launch",
       "mainClass": "GetterSetter2"

@@ -1,3 +1,5 @@
+package java_lecture_2;
+
 /**
  * ## 섹션 8. 자바 메모리 구조와 static
  */
@@ -5,16 +7,16 @@ public class Section08_Static {
     public static void main(String[] args) {
 
         // 1~4. [강의: 자바 메모리 구조 / 스택과 힙 영역]
-        /* 
-         * 메서드 영역: 클래스 정보, static 변수 보관
-         * 스택 영역: 지역 변수, 메서드 호출 프레임 (LIFO)
-         * 힙 영역: 실제 객체(인스턴스) 보관
+        /*
+         * 메서드 영역(Method Area): 클래스 정보와 static 멤버가 저장되는 공간입니다.
+         * 스택 영역(Stack Area): 메서드 호출 시 생성되는 지역 변수가 저장되는 공간입니다.
+         * 힙 영역(Heap Area): new로 만든 객체가 저장되는 공간입니다.
          */
 
         // 5~7. [강의: static 변수]
-        /* 
-         * static 이 붙으면 인스턴스가 아닌 '클래스'에 소속됩니다. 
-         * 여러 객체가 공유하는 변수가 됩니다.
+        /*
+         * static이 붙은 변수는 클래스에 한 번만 만들어집니다.
+         * 따라서 모든 인스턴스가 같은 static 변수를 공유합니다.
          */
         Counter c1 = new Counter();
         Counter c2 = new Counter();
@@ -29,6 +31,7 @@ public class Section08_Static {
 
 class Counter {
     static int totalCount; // 공용 변수
+
     Counter() {
         totalCount++;
     }
