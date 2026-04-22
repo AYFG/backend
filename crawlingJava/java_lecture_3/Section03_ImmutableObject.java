@@ -25,6 +25,7 @@ public class Section03_ImmutableObject {
          * 값을 변경해야 할 때는 기존 객체를 수정하는 대신, 새로운 객체를 생성해서 반환합니다.
          */
         ImmutableAddress newAddress = c.withValue("부산");
+	System.out.println("b = " + b.getValue());
         System.out.println("c = " + c.getValue()); 
         System.out.println("newAddress = " + newAddress.getValue()); 
     }
