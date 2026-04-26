@@ -1,4 +1,3 @@
-package java_lecture_3;
 
 /**
  * ## 섹션 9. 중첩 클래스, 내부 클래스2
@@ -12,7 +11,9 @@ public class Section09_NestedClass2 {
          */
         int localVar = 100;
         class LocalPrinter {
-            void print() { System.out.println("localVar = " + localVar); }
+            void print() {
+                System.out.println("localVar = " + localVar);
+            }
         }
         LocalPrinter printer = new LocalPrinter();
         printer.print();
@@ -23,7 +24,9 @@ public class Section09_NestedClass2 {
          */
         Greeting koreanGreeting = new Greeting() {
             @Override
-            public void greet() { System.out.println("안녕하세요"); }
+            public void greet() {
+                System.out.println("안녕하세요");
+            }
         };
         koreanGreeting.greet();
     }
