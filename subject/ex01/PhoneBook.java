@@ -5,9 +5,11 @@ public class PhoneBook {
         Contact[] contact = new Contact[8];
 
         Scanner scanner = new Scanner(System.in);
-
-        if (scanner.nextLine() == "EXIT") {
-            return;
-        }
+	String str= scanner.next();
+        if (str.equals("EXIT")) {
+		System.out.println("eexxiitt");
+        }else{
+		System.out.println(str);
+	}
     }
 }
