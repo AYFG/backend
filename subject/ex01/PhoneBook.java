@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
 public class PhoneBook {
+    static  Contact[] contact = new Contact[8];
+    static int PhoneBookLength = 0;
+
     public static void main(String[] args) {
-        Contact[] contact = new Contact[8];
+
         Scanner scanner = new Scanner(System.in);
-        
+
         while(true){
             if (!scanner.hasNext()) {
                 break;
@@ -22,6 +25,7 @@ public class PhoneBook {
         switch (str) {
             case "ADD":
                 System.out.println("ADD");
+		contact.
                 break;
             case "SEARCH":
                 System.out.println("SEARCH");
