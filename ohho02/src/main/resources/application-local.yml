@@ -13,8 +13,17 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     properties:
       hibernate:
         show-sql: true
         format-sql: true
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/h2/**/*.xml
+  type-handlers-package: dev.ohhonim.ohho02.mapper.typehandler
+  type-aliases-package: dev.ohhonim.ohho02.model
+  configuration:
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 30
+    default-fetch-size: 100
