@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample</title>
+  </head>
+  <body>
+    <h1>Sample</h1>
+    <div id="list"></div>
+    <button id="btn">조회하기</button>
+    <script>
+      async function list() {
+        const response = await fetch("http://localhost:8080/posts/list");
+        const data = await response.json();
+
+        const mapData = data
+          .map((post) => `
+            <li style="padding: 10px; border-bottom: 1px solid #eee; list-style: none;">
+              <strong style="color: #333;">${post.title}</strong>
+            </li>`)
+          .join("");
+
+        document.getElementById("list").innerHTML = `
+          <ul style="padding: 0; border: 1px solid #ddd; border-radius: 8px;">
+            ${mapData}
+          </ul>`;
+      }
+
+      document.getElementById("btn").addEventListener("click", list);
+    </script>
+  </body>
+</html>
