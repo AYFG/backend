@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{url}}/posts/list
+  url: {{url}}/posts/list?title=titl
   body: none
   auth: none
+}
+
+params:query {
+  title: titl
 }
