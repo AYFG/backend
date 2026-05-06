@@ -27,13 +27,14 @@ public class PostController {
     // }
 
     @GetMapping("/list")
-    public List<Post> postList(@RequestParam String title) {
-        return postService.postList(title);
+    // public List<Post> postList(@RequestParam String title) {
+    public List<Post> postList() {
+        return postService.postList();
     }
 
-    @GetMapping("/{postId}")
-    public Post postDetail(@PathVariable("postId") String postId) {
-        return new Post(UUID.randomUUID(), "title1", "contnet1", "", LocalDateTime.now());
-    }
-
+    // @GetMapping("/{postId}")
+    // public Post postDetail(@PathVariable("postId") String postId) {
+    // return new Post(UUID.randomUUID(), "title1", "contnet1", "",
+    // LocalDateTime.now());
+    // }
 }

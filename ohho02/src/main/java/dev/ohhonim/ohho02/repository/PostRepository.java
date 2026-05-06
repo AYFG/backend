@@ -11,6 +11,6 @@ public interface PostRepository extends JpaRepository<Post, UUID> {
 
     // List<Post> findByTitle(String title);
 
-    List<Post> findByTitleContains(String title);
+    // List<Post> findByTitleContains(String title);
 
 }
