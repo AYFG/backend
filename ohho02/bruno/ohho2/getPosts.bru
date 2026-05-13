@@ -1,0 +1,15 @@
+meta {
+  name: getPosts
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/posts/list?title=titl
+  body: none
+  auth: none
+}
+
+params:query {
+  title: titl
+}

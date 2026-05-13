@@ -1,0 +1,27 @@
+services:
+  mariadb:
+    image: mariadb:10.11
+    container_name: mariadb-ohho02
+    ports:
+      - "3307:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+      MARIADB_DATABASE: ohho02
+      MARIADB_USER: ohho
+      MARIADB_PASSWORD: password
+    volumes:
+      - ./mariadb_data:/var/lib/mysql
+    restart: always
+
+  postgres:
+    image: postgres:15
+    container_name: postgres-ohho02
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: ohho
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ohho02
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    restart: always

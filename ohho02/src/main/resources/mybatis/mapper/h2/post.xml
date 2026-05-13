@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dev.ohhonim.ohho02.mapper.PostMapper">
+
+    <resultMap id="PostResultMap" type="dev.ohhonim.ohho02.model.Post">
+        <id property="postId" column="post_id" typeHandler="dev.ohhonim.ohho02.mapper.typehandler.UuidTypeHandler"/>
+        <result property="title" column="title"/>
+        <result property="contents" column="contents"/>
+        <result property="author" column="author"/>
+        <result property="createDateTime" column="create_date_time"/>
+    </resultMap>
+
+    <select id="listPost" resultMap="PostResultMap">
+        select
+            post_id,
+            title,
+            contents,
+            author,
+            create_date_time
+        from post
+    </select>
+</mapper>
