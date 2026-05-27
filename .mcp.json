@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "figma-free": {
+      "command": "npx",
+      "args": ["-y", "--package", "figma-free-mcp", "figma-free-mcp-server"]
+    }
+  }
+}
