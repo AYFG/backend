@@ -5,6 +5,22 @@
 
 ---
 
+## 빌드 환경 설정 (고정)
+
+| 항목 | 값 |
+|---|---|
+| 빌드 도구 | **Gradle** (Gradle Wrapper `gradlew` 사용) |
+| Java | **17** |
+| Spring Boot | **3.5.x** (현재 최신: 3.5.14) |
+
+새 프로젝트 생성 시 반드시 위 설정을 따라라.
+`start.spring.io` API 사용 예시:
+```
+type=gradle-project&language=java&bootVersion=3.5.14&javaVersion=17
+```
+
+---
+
 ## 10가지 작업 원칙
 
 ### 1. 답을 주지 말고, 깨닫게 하라
