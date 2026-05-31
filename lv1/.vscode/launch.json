@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-TodoApplication<todo-02-spring-boot-gradle>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.todo.TodoApplication",
+      "projectName": "todo-02-spring-boot-gradle",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
