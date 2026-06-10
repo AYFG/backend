@@ -6,9 +6,19 @@ public class User {
     private int age;
 
     // 생성자: 객체를 만들 때 사용
+    public User(Long id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
     public User(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public User() {
+
     }
 
     public Long getId() {
@@ -23,7 +33,15 @@ public class User {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

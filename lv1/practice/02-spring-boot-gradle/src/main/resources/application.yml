@@ -1,0 +1,18 @@
+# 1. 서버 포트를 8080으로 설정 (기본값이지만 명시)
+server:
+  port: 8080
+
+# 2. 스프링 관련 설정
+spring:
+  # 3. 데이터베이스(냉장고) 접속 정보
+  datasource:
+    url: jdbc:h2:./data/demo # (A) "메모리(mem) 방식의, 'testdb'라는 이름의 H2 냉장고에 연결할게"
+    driver-class-name: org.h2.Driver # (B) "H2 냉장고 전용 드라이버(설명서)는 이거야"
+    username: sa # (C) "냉장고 관리자 아이디는 'sa'야"
+    password: # (D) "냉장고 비밀번호는 없어"
+
+  # 4. H2 냉장고의 '관리자 화면' 설정
+  h2:
+    console:
+      enabled: true # (E) "H2 관리자 화면을 켜줘 (true)"
+      path: /h2-console # (F) "관리자 화면 주소는 '/h2-console'로 할게"
