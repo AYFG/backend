@@ -1,24 +1,24 @@
 package com.example.todo;
 
+import jakarta.persistence.*;
+
+@Table(name = "users")
+@Entity
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int age;
 
-    // 생성자: 객체를 만들 때 사용
-    public User(Long id, String name, int age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
+    public User() {
+
     }
+    // 생성자: 객체를 만들 때 사용
 
     public User(String name, int age) {
         this.name = name;
         this.age = age;
-    }
-
-    public User() {
-
     }
 
     public Long getId() {
