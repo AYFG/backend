@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DynamicProxyMain",
+      "request": "launch",
+      "mainClass": "com.example.todo.DynamicProxyMain",
+      "projectName": "todo-02-spring-boot-gradle"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-TodoApplication<todo-02-spring-boot-gradle>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
